@@ -5,7 +5,7 @@ import sys
 def infinite_add():
     args = sys.argv[1:]
     total = sum(map(int, args))
-    print(total)
+    print(total, end='\n')
 
 
 if __name__ == "__main__":
