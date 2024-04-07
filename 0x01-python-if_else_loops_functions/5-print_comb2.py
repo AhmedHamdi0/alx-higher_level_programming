@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-for i in range(100):
-    print(f"{i:02}", end=", " if i < 99 else "\n")
+print(', '.join(str(i).zfill(2) if i != 99 else str(i) for i in range(100)))
