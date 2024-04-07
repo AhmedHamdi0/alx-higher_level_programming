@@ -4,8 +4,8 @@ import sys
 
 def infinite_add():
     args = sys.argv[1:]
-    result = sum(int(arg) for arg in args)
-    print(result)
+    total = sum(map(int, args))
+    print(total)
 
 
 if __name__ == "__main__":
