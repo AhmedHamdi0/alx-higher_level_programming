@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Defines a name-printing function."""
+
 
 def say_my_name(first_name, last_name=""):
     """Prints the full name in the format
@@ -10,5 +12,4 @@ def say_my_name(first_name, last_name=""):
     if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
 
-    full_name = "My name is {} {}".format(first_name, last_name)
-    print(full_name)
+    print(f"My name is {first_name} {last_name}")
