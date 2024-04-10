@@ -1,0 +1,25 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello. This is a test.")
+Hello
+This is a test
+
+>>> text_indentation("What is this? A question?")
+What is this
+A question
+
+>>> text_indentation("This is a long text without any punctuation")
+This is a long text without any punctuation
+
+>>> text_indentation("One line. Second line with a question? Third line: with a colon.")
+One line
+Second line with a question
+Third line
+with a colon
+
+>>> text_indentation("No new lines")
+No new lines
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+TypeError: text must be a string
