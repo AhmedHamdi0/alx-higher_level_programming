@@ -12,7 +12,7 @@ class Rectangle:
         """Initializes the Rectangle instance."""
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
+        self.number_of_instances += 1
 
     @property
     def width(self):
@@ -58,6 +58,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
+            return '\n'.join([str(self.print_symbol)
                               * self.__width] * self.__height)
 
     def __repr__(self):
@@ -67,4 +68,4 @@ class Rectangle:
     def __del__(self):
         """Prints a message when an instance is deleted."""
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        self.number_of_instances -= 1
