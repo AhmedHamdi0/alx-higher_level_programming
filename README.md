@@ -17,3 +17,6 @@
 
 # `SQL - More queries`
 ![SQL - More queries](assets/0x0E.%20SQL%20-%20More%20queries.jpg)
+
+# `JavaScript - Warm up`
+![JavaScript - Warm up](assets/0x12.%20JavaScript%20-%20Warm%20up.jpeg)
