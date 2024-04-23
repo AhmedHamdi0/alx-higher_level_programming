@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-function addMeMaybe (number, callback) {
-  callback(++number);
+function addMeMaybe (number, func) {
+  func(++number);
 }
 
 module.exports = { addMeMaybe };
