@@ -10,8 +10,8 @@ def get_states_match_name(username, password, db_name, state_name):
         db = MySQLdb.connect(host="localhost", port=3306,
                              user=username, passwd=password, db=db_name)
         cursor = db.cursor()
-        query = (f"SELECT * FROM states WHERE "
-                 f"name = '{state_name}' ORDER BY id ASC")
+        query = (f"""SELECT * FROM states WHERE
+                 name LIKE BINARY '{state_name}' ORDER BY id ASC""")
         cursor.execute(query)
 
         states = cursor.fetchall()
