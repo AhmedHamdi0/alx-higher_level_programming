@@ -20,3 +20,6 @@
 
 # `JavaScript - Warm up`
 ![JavaScript - Warm up](assets/0x12.%20JavaScript%20-%20Warm%20up.jpeg)
+
+# `Object Relational Mapping`
+![Object Relational Mapping](assets/0x0F.%20Python%20-%20Object-relational%20mapping.jpg)
